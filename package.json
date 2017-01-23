@@ -1,22 +1,26 @@
 {
     "name": "xyz",
-    "description": "XYZ, a minimalist theme based on Julian Ćwirko's "ABC" for Ghost",
+    "description": "XYZ, a minimalist theme based on Julian Ćwirko's ABC for Ghost",
     "demo": "https://stephencwright.co.uk",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
     },
     "license": "MIT",
-    "author" {
+    "screenshots": {
+        "desktop": "",
+        "mobile": ""
+    },
+    "author": {
         "name": "Stephen Wright",
         "email": "hello@stephencwright.co.uk",
         "url": "https://stephencwright.co.uk"
     },
-    "gpm" {
+    "gpm": {
         "type": "theme",
         "categories": [
             "Minimal",
-            "Personal Blog"
+            "Personal Blogs"
         ]
     },
     "keywords": [

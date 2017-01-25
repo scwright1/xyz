@@ -1,20 +1,17 @@
-@c_midnight: #2B2E4A;
-@c_red: #E84545;
-@c_maroon: #903749;
-@c_purple: #53354A;
+// out: ../css/style.css, sourcemap: false, compress: true
+
+@import "_palette";
+
 
 html {
     width: 100%;
     margin: 0 auto;
     body {
-        margin-top: 8px;
-        #btop {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 8px;
-            background-color: @c_maroon;
-        }
+      margin-left: 52px;
+      margin-top: 6px;
+      padding: 10px;
+      background-color: @c_offwhite;
     }
 }
+
+@import "_sidebar";

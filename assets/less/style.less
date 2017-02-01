@@ -2,16 +2,23 @@
 
 @import "_palette";
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
 html {
-    width: 100%;
-    margin: 0 auto;
-    body {
-      margin-left: 52px;
-      margin-top: 6px;
-      padding: 10px;
-      background-color: @c_offwhite;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 38em) {
+    html {
+        font-size: 20px;
     }
 }
 
 @import "_sidebar";
+@import "_topbar";

@@ -1,10 +1,21 @@
 // main: ./style.less
 
+@import "_palette";
+
 @media screen and (min-width: 300px) {
-    #topbar {
+    .masthead {
         padding-top: 1rem;
         padding-bottom: 1rem;
         margin-bottom: 3rem;
         border-bottom: 1px solid darken(@c_white, 10%);
+        > .container {
+            max-width: 38em;
+            > .masthead-title {
+                margin-bottom: 0;
+                margin-top: 0;
+                color: @c_low;
+                font-weight: 400;
+            }
+        }
     }
 }

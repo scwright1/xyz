@@ -2,19 +2,71 @@
 
 @import "_palette";
 
-@media screen and (min-width: 300px) {
+@media screen {
     .masthead {
         padding-top: 1rem;
         padding-bottom: 1rem;
         margin-bottom: 3rem;
         border-bottom: 1px solid darken(@c_white, 10%);
         > .container {
-            max-width: 38em;
+            h4 {
+                font-size: 14px;
+            }
             > .masthead-title {
                 margin-bottom: 0;
                 margin-top: 0;
                 color: @c_low;
                 font-weight: 400;
+            }
+            > .masthead-desc {
+                margin-bottom: 0;
+                margin-top: 0;
+                color: @c_low;
+                font-weight: 300;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .masthead {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        > .container {
+            max-width: 100%;
+            text-align: right;
+            > .masthead-title {
+                font-size: 14px;
+            }
+            > .masthead-desc {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .masthead {
+        > .container {
+            > .masthead-title {
+                margin-left: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .masthead {
+        > .container {
+            max-width: 38rem;
+            text-align: center;
+            > .masthead-title {
+                display: inline-block;
+            }
+            > .masthead-desc {
+                display: inline-block;
             }
         }
     }

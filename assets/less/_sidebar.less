@@ -8,7 +8,28 @@
     position: absolute;
     top: 0;
     width: 15rem;
-    background: @c_mid1;
+    background: @c_low;
+    > .content {
+        width: 100%;
+        min-height: 50%;
+        > .logo {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 3.5rem;
+            overflow: hidden;
+            margin: 4rem;
+            > .blog-logo {
+                > img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    > .menu-action {
+        position: absolute;
+        top: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -26,7 +47,7 @@
                     width: 100%;
                     height: 6px;
                     border-radius: 4px;
-                    background: @c_low;
+                    background: @c_mid2;
                     margin-bottom: 6px;
                     margin-left: 0;
                     margin-right: 0;
@@ -40,7 +61,7 @@
     #sidebar {
         left: -14.8rem;
         > .menu-action {
-            margin-top: 1rem;
+            margin-top: 0.6rem;
             margin-left: 16rem;
             width: 18px;
             height: 18px;

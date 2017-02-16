@@ -1,0 +1,31 @@
+//main: ./style.less
+
+@import "_palette";
+
+body {
+    > .content {
+        height: 100%;
+        float: right;
+        top: 0;
+        right: 0;
+        background-color: @c_offwhite;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    body {
+        > .content {
+            left: 28rem;
+        }
+    }
+}
+
+/* anything under 1280px is too narrow for a sidebar */
+@media screen and (max-width: 79.9375rem) {
+    body {
+        > .content {
+            left: 0.2rem;
+        }
+    }
+}

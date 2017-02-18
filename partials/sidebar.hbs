@@ -1,2 +1,22 @@
 <section id="sidebar" class="sidebar">
+    <div class="inner">
+        {{#if @blog.logo}}
+        <div class="logo">
+            <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo"  /></a>
+        </div>
+        {{/if}}
+        {{#if @blog.description}}
+        <div class="description">{{@blog.description}}</div>
+        {{/if}}
+    </div>
+    {{!-- This section should be updated to reflect the correct copyright date(s) (i.e. &copy 2015 - 2017) --}}
+    {{!-- Also, if you like this theme, please think about leaving the link to my website in place :) --}}
+    <div class="footer">
+        <div class="footer-text">
+            &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="{{@blog.url}}">{{@blog.title}}</a>.  All Rights Reserved.
+        </div>
+        <div class="footer-text">
+            Made with <a href="https://stephencwright.co.uk">&#10084;</a> | Published with <a href="https://ghost.org">Ghost</a>
+        </div>
+    </div>
 </section>

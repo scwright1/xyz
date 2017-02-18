@@ -8,10 +8,42 @@ body {
         max-height: 100%;
         float: left;
         top: 0;
-        width: 28rem;
         background-color: @c_low;
+        position: relative;
         > .inner {
-            margin: 4.75rem;
+            > .logo {
+                margin: 0 auto;
+                > a > img {
+                    display: block;
+                    margin: auto;
+                    border-radius: 50%;
+                    width: auto;
+                    overflow: hidden;
+                }
+            }
+            > .description {
+                color: @c_high;
+                font-weight: 300;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        > .footer {
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+            > .footer-text {
+                color: @c_high;
+                font-size: 0.625rem;
+                font-weight: 300;
+                margin: 0 auto;
+                text-align: center;
+                text-decoration: none;
+                > a {
+                    text-decoration: none;
+                    color: @c_mid2;
+                }
+            }
         }
     }
 }
@@ -20,6 +52,16 @@ body {
     body {
         > #sidebar {
             left: 0;
+            width: 28rem;
+            > .inner {
+                margin: 4.75rem;
+                > .logo > a > img {
+                    height: 16rem;
+                }
+            }
+            > .footer {
+                margin-bottom: 4.75rem;
+            }
         }
     }
 }
@@ -27,7 +69,22 @@ body {
 @media screen and (max-width: 79.9375rem) {
     body {
         > #sidebar {
-            left: -27.8rem;
+            left: -18.55rem;
+            width: 18.75rem;
+            position: absolute;
+            z-index: 99;
+            > .inner {
+                margin: 3rem;
+                > .logo > a > img {
+                    height: 12rem;
+                }
+                > .description {
+                    font-size: 0.75rem;
+                }
+            }
+            > .footer {
+                margin-bottom: 3rem;
+            }
         }
     }
 }

@@ -1,4 +1,31 @@
 {{!< default}}
 
-{{#foreach posts}}
-{{/foreach}}
+<section class="post-list">
+    {{#foreach posts}}
+    <article class="{{post_class}}">
+        <div class="metadata">
+            <b>Published:</b> {{date published_at timeago="true"}}<br />
+            <b>Posted In:</b> {{tags}}
+        </div>
+        {{#if image}}
+        <div class="cover-image" style="
+        background: url({{image absolute="true"}}) center center no-repeat;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+         -webkit-background-size: cover;
+         filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{image absolute="true"}}', sizingMethod='scale');
+         -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{image absolute="true"}}', sizingMethod='scale')";
+         ">
+        </div>
+        {{/if}}
+        <div class="post-title">
+            <a href="{{url absolute="true"}}"><h2>{{title}}</h2></a>
+        </div>
+    </article>
+    <div class="separator"><div class="line"></div></div>
+    {{/foreach}}
+</section>
+
+<!-- Previous/next page links - displayed on every page -->
+{{pagination}}

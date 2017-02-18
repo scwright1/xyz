@@ -9,7 +9,7 @@ body {
         float: left;
         top: 0;
         background-color: @c_low;
-        position: relative;
+        position: fixed;
         > .inner {
             > .logo {
                 margin: 0 auto;
@@ -54,7 +54,10 @@ body {
             left: 0;
             width: 28rem;
             > .inner {
-                margin: 4.75rem;
+                margin-top: 2.75rem;
+                margin-right: 4.75rem;
+                margin-left: 4.75rem;
+                margin-bottom: 4.75rem;
                 > .logo > a > img {
                     height: 16rem;
                 }
@@ -71,10 +74,13 @@ body {
         > #sidebar {
             left: -18.55rem;
             width: 18.75rem;
-            position: absolute;
+            position: fixed;
             z-index: 99;
             > .inner {
-                margin: 3rem;
+                margin-top: 1.75rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-bottom: 3rem;
                 > .logo > a > img {
                     height: 12rem;
                 }

@@ -1,0 +1,43 @@
+//main: ./style.less
+
+@import "_palette";
+
+body {
+    > .content {
+        > .post {
+            margin: 0 auto;
+            > .post-content {
+                > p {
+                    > img {
+                        max-width: 100%;
+                    }
+                    > code {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    body {
+        > .content {
+            > .post {
+                margin-top: 5rem;
+                width: 74%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 79.9375rem) {
+    body {
+        > .content {
+            > .post {
+                margin-top: 3rem;
+                width: 90%;
+            }
+        }
+    }
+}

@@ -3,12 +3,12 @@
 <section class="post-list">
     {{#foreach posts}}
     <article class="{{post_class}}">
-        <div class="metadata">
+        <header class="metadata">
             <b>Published:</b> {{date published_at timeago="true"}}<br />
-            <b>Posted In:</b> {{tags}}
-        </div>
+            {{#if tags}}<b>Posted In:</b> {{tags}}{{/if}}
+        </header>
         {{#if image}}
-        <div class="cover-image" style="
+        <header class="cover-image" style="
         background: url({{image absolute="true"}}) center center no-repeat;
         background-size: cover;
         -o-background-size: cover;
@@ -17,11 +17,16 @@
          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{image absolute="true"}}', sizingMethod='scale');
          -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{image absolute="true"}}', sizingMethod='scale')";
          ">
-        </div>
+        </header>
         {{/if}}
-        <div class="post-title">
+        <section class="post-title">
             <a href="{{url absolute="true"}}"><h2>{{title}}</h2></a>
-        </div>
+        </section>
+        <section class="post-excerpt">
+            <p>
+                {{excerpt words="44"}} <a class="read-more" href="{{url}}">...</a>
+            </p>
+        </section>
     </article>
     <div class="separator"><div class="line"></div></div>
     {{/foreach}}

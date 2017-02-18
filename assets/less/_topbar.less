@@ -15,11 +15,15 @@ body {
                     margin-top: 0;
                     margin-bottom: 0;
                     color: @c_mid2;
-                    font-weight: 300;
+                    font-weight: 400;
+                    > a {
+                        text-decoration: none;
+                        color: @c_mid2;
+                    }
                 }
             }
             > .sidebar-button {
-                position: absolute;
+                position: fixed;
                 > .section {
                     width: 100%;
                     background-color: @c_low;
@@ -36,7 +40,7 @@ body {
                 > .sidebar-button {
                     width: 2rem;
                     height: 2rem;
-                    left: 1.5rem;
+                    left: 29.5rem;
                     top: 1.5rem;
                     > .section {
                         height: 0.5rem;

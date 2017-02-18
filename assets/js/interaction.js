@@ -34,6 +34,7 @@ function ShowHideSidebar() {
         if($window.width() >1279) {
             $sidebar.animate({left: "-27.8rem"}, 500);
             $content.animate({left: "0.2rem"}, 500);
+            $button.animate({left: "1.5rem"}, 500);
         } else {
             $sidebar.animate({left: "-18.55rem"}, 500);
             $button.animate({left: "0.75rem"}, 500);
@@ -43,6 +44,7 @@ function ShowHideSidebar() {
         if($window.width() > 1279) {
             $sidebar.animate({left: "0"}, 500);
             $content.animate({left: "28rem"}, 500);
+            $button.animate({left: "29.5rem"}, 500);
         } else {
             $sidebar.animate({left: "0"}, 500);
             $button.animate({left: "19.5rem"}, 500);

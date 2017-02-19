@@ -24,5 +24,23 @@
     <section class="post-content">
         {{content}}
     </section>
+    <footer class="metadata">
+        <b>Author:</b> {{author.name}}
+    </footer>
+    <div class="separator">
+        <div class="line">
+        </div>
+    </div>
+    {{#prev_post}}
+    <div class="previous-post">
+        <b>Previous: </b><a href="{{url}}">{{title}}</a>
+    </div>
+    {{/prev_post}}
+
+    {{#next_post}}
+    <div class="next-post">
+        <b>Next: </b><a href="{{url}}">{{title}}</a>
+    </div>
+    {{/next_post}}
 </section>
 {{/post}}

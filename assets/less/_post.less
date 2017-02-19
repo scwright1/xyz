@@ -63,6 +63,22 @@ body {
                     border-left: 4px solid darken(@c_high, 10%);
                 }
             }
+            > .separator {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                > .line {
+                    border-bottom: 1px solid darken(@c_offwhite, 10%);
+                }
+            }
+            > .previous-post {
+                padding-top: 3rem;
+                > a {
+                    color: @c_mid2;
+                    text-decoration: none;
+                    font-weight: 300;
+                }
+            }
         }
     }
 }
@@ -72,6 +88,7 @@ body {
         > .content {
             > .post {
                 margin-top: 5rem;
+                margin-bottom: 5rem;
                 width: 74%;
                 > .cover-image {
                     height: 12.5rem;
@@ -87,6 +104,7 @@ body {
         > .content {
             > .post {
                 margin-top: 3rem;
+                margin-bottom: 3rem;
                 width: 90%;
                 > .cover-image {
                     margin-top: 1rem;

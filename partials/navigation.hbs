@@ -5,6 +5,8 @@
         <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
         {{/foreach}}
         <!-- End the loop -->
+        {{#if @blog.twitter}}<li><a href="{{twitter_url}}">Twitter</a></li>{{/if}}
+        {{#if @blog.facebook}}<li><a href="{{facebook_url}}">Facebook</a></li>{{/if}}
         {{> social}}
     </ul>
 </div>

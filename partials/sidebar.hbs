@@ -8,6 +8,7 @@
         {{#if @blog.description}}
         <div class="description">{{@blog.description}}</div>
         {{/if}}
+        {{navigation}}
     </div>
     {{!-- This section should be updated to reflect the correct copyright date(s) (i.e. &copy 2015 - 2017) --}}
     {{!-- Also, if you like this theme, please think about leaving the link to my website in place :) --}}
@@ -16,7 +17,7 @@
             &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="{{@blog.url}}">{{@blog.title}}</a>.  All Rights Reserved.
         </div>
         <div class="footer-text">
-            Made with <a href="https://stephencwright.co.uk">&#10084;</a> | Published with <a href="https://ghost.org">Ghost</a>
+            Made with <a href="https://stephencwright.co.uk"><i class="fa fa-heart" aria-hidden="true"></i></a> | Published with <a href="https://ghost.org">Ghost</a>
         </div>
     </div>
 </section>

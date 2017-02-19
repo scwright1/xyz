@@ -10,6 +10,9 @@ XYZ is a responsive text-centric theme for Ghost.  The primary focus should alwa
 XYZ is on the MIT license. You can use it as you like.  However, if you feel like letting me know what you're using it for, i'd be happy to know!
 
 #####Changelog
+######1.1.3
+* Fixed styling for Next Post div
+
 ######1.1.2
 * Added Previous and Next post to Post page
 * Added Author section to Post
